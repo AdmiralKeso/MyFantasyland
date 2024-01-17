@@ -1,0 +1,22 @@
+#menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu-header-text {
+    text-align: center;
+}
+#menu-title {
+    font-family: 'Times new roman';
+    font-size: 70px;
+}
+#menu-title-alt {
+    font-family: impact;
+    position: relative;
+    bottom: 50px;
+    font-size: 40px;
+}
+.nav-item {
+    font-size: 25px;
+    text-decoration: none;
+}
