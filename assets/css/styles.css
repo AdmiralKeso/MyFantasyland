@@ -41,3 +41,20 @@
 .menu-item {
     text-decoration: none;
 }
+/**Footer styling for index.html**/
+#menu-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    background: grey;
+    padding-top: 5px;
+}
+#menu-footer-symbol {
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+}
