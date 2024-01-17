@@ -1,3 +1,4 @@
+/**Header styling for index.html**/
 #menu-header {
     display: flex;
     justify-content: space-around;
@@ -18,5 +19,25 @@
 }
 .nav-item {
     font-size: 25px;
+    text-decoration: none;
+}
+/**Mid section styling for index.html**/
+#menu-text-box {
+    width: 30%;
+    position: absolute;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 0;
+    height: 450px;
+    overflow-y: scroll;
+}
+#menu-buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    align-items: center;
+    gap: 30px;
+}
+.menu-item {
     text-decoration: none;
 }
