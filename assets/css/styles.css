@@ -43,11 +43,7 @@
 }
 /**Footer styling for index.html**/
 #menu-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
+    margin-top: 250px;
     display: flex;
     justify-content: space-between;
     background: grey;
