@@ -45,11 +45,14 @@
     justify-content: space-between;
     background: rgb(179, 0, 0);
     padding-top: 5px;
+    align-items: center;
 }
 #menu-footer-symbol {
     display: flex;
     margin-right: 10px;
     gap: 10px;
+    width: 180px;
+}
 #contact-item {
 text-decoration: none;
 color: pink;
