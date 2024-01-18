@@ -10,6 +10,7 @@
 #menu-title {
     font-family: 'Times new roman';
     font-size: 70px;
+    color: white;
 }
 #menu-title-alt {
     font-family: impact;
@@ -42,7 +43,7 @@
     margin-top: 250px;
     display: flex;
     justify-content: space-between;
-    background: grey;
+    background: rgb(179, 0, 0);
     padding-top: 5px;
 }
 #menu-footer-symbol {
