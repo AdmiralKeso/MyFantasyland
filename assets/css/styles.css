@@ -48,8 +48,9 @@ font-size: 2.5em;
 }
 #menu-title {
     font-family: 'Times new roman';
-    font-size: 70px;
+    font-size: 3rem;
     color: white;
+    margin-top: 70px;
 }
 #menu-title-alt {
     font-family: impact;
