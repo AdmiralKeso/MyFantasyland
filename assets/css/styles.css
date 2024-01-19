@@ -60,7 +60,6 @@ position: absolute;
 }
 /**Footer styling for index.html**/
 #menu-footer {
-    margin-top: 250px;
     display: flex;
     justify-content: space-between;
     background: rgb(179, 0, 0);
