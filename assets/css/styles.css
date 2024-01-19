@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1177px){
     .mid-section {
         flex-direction: column-reverse;
         align-items: center;
@@ -9,6 +9,7 @@
         }
         #scroll {
             min-width: 80%;
+            min-height: 50%;
             background: url(/assets/images/scroll-rotate.png);
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -19,21 +20,25 @@
         #menu-buttons {
             white-space: nowrap;
         }
+        body {
+            background: url(/assets/images/castle-background-mobile.jpg);
+            background-size: cover;
+        }
     }
         @media only screen and (max-width: 700px){
             #menu-text-box {
-font-size: 20px;
+font-size: 19px;
             }
             #menu-title {
                 font-size: 1.8rem;
             }
         }
-        @media only screen and (max-width: 400px){
+        @media only screen and (max-width: 581px){
             #menu-text-box {
-font-size: 2.5em;
+font-size: 2.2em;
             }
             #menu-title {
-                font-size: 1.8rem;
+                font-size: 2vw;
             }
         }
 /**Header styling for index.html**/
