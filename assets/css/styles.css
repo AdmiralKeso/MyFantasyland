@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 180px;
 }
 #menu-header-text {
     text-align: center;
