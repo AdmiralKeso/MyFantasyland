@@ -96,6 +96,8 @@ position: absolute;
 }
 .menu-item {
     text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px black;
 }
 /**Footer styling for index.html**/
 #menu-footer {
