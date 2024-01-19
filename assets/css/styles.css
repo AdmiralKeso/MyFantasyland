@@ -1,3 +1,30 @@
+@media only screen and (max-width: 1100px){
+    .mid-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    #scroll-img {
+        display: none;
+        }
+        #scroll {
+            min-width: 80%;
+            background: url(/assets/images/scroll-rotate.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        #menu-text-box {
+            font-size: 1.4em;
+        }
+        #menu-buttons {
+            white-space: nowrap;
+        }
+    }
+        @media only screen and (max-width: 700px){
+            #menu-text-box {
+font-size: 1.8em;
+            }
+        }
 /**Header styling for index.html**/
 #menu-header {
     display: flex;
