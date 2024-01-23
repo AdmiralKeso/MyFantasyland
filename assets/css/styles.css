@@ -27,10 +27,7 @@ body, html {
     color: white;
     margin: 0;
 }
-#menu-title-alt {
-    font-family: impact;
-    font-size: 3vw;
-    margin: 0;
+    font-size: 80px;
 }
 @media only screen and (max-width: 700px){
     #menu-title {
@@ -68,10 +65,9 @@ body, html {
     display: flex;
     flex-direction: column;
     font-size: 5vw;
-    white-space: nowrap;
     align-items: center;
     width: 33%;
-    gap: 2vw;
+    gap: 4vw;
 }
 .menu-item {
     text-decoration: none;
@@ -95,7 +91,7 @@ body, html {
         font-size: 1rem;
     }
     #menu-buttons {
-        font-size: 40px;
+        font-size: 2rem;
     }
 }
 /**Footer styling for index.html**/
@@ -105,7 +101,7 @@ body, html {
     background: rgb(179, 0, 0);
     align-items: center;
     width: 100%;
-    min-height: 10%;
+    height: 10%;
 }
 #menu-footer-symbol {
     display: flex;
