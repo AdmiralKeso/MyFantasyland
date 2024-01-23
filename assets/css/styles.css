@@ -23,10 +23,7 @@ body, html {
 }
 #menu-title {
     font-family: 'Times new roman';
-    font-size: 5vw;
     color: white;
-    margin: 0;
-}
     font-size: 80px;
 }
 @media only screen and (max-width: 1000px){
