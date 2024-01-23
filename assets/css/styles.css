@@ -1,129 +1,112 @@
-@media only screen and (max-width: 1177px){
-    .mid-section {
-        flex-direction: column-reverse;
-        align-items: center;
-        width: 100%;
-    }
-    #scroll-img {
-        display: none;
-        }
-        #scroll {
-            min-width: 80%;
-            min-height: 50%;
-            background: url(/assets/images/scroll-rotate.png);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-        #menu-text-box {
-            font-size: 1.4em;
-        }
-        #menu-buttons {
-            white-space: nowrap;
-        }
-        body {
-            background: url(/assets/images/castle-background-mobile.jpg);
-            background-size: cover;
-        }
-    }
-        @media only screen and (max-width: 700px){
-            #menu-text-box {
-font-size: 19px;
-            }
-            #menu-title {
-                font-size: 1.8rem;
-            }
-        }
-        @media only screen and (max-width: 581px){
-            #menu-text-box {
-font-size: 2.2em;
-            }
-            #menu-title {
-                font-size: 2vw;
-            }
-        }
 /**Header styling for index.html**/
 #menu-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 180px;
+    height: 10%;
+    width: 100%;
+
 }
 #menu-header-text {
     text-align: center;
+    width: 100%;
 }
 #menu-title {
     font-family: 'Times new roman';
-    font-size: 3rem;
+    font-size: 5vw;
     color: white;
-    margin-top: 70px;
+    margin: 0;
 }
 #menu-title-alt {
     font-family: impact;
-    position: relative;
-    bottom: 50px;
-    font-size: 40px;
+    font-size: 3vw;
+    margin: 0;
+}
+@media only screen and (max-width: 700px){
+    #menu-title {
+        font-size: 9vw;
+    }
 }
 /**Mid section styling for index.html**/
 .mid-section {
     display: flex;
-    justify-content: left;
-    height: 600px;
-}
-#menu-text-box {
-    display: flex;
-    position: relative;
-    top: 60px;
-    width: 80%;
-    height: 60%;
-    text-align: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
 }
 #scroll {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 33%;
     position: relative;
-    font-size: 1.8vw;
-    height: 100%;
+}
+#menu-text-box {
+    display: flex;
+    width: 80%;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.7vw;
 }
 #scroll-img {
-width: 100%;
-height: 100vw;
-position: absolute;
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
 }
 #menu-buttons {
     display: flex;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 5vw;
+    white-space: nowrap;
     align-items: center;
-    gap: 20px;
     width: 33%;
+    gap: 2vw;
 }
 .menu-item {
     text-decoration: none;
-    color: white;
-    text-shadow: 3px 3px black;
+    color: rgb(168, 4, 4);
+}
+@media only screen and (max-width: 1000px){
+    #menu-text-box {
+        font-size: 2.2vw;
+    }
+}
+@media only screen and (max-width: 700px){
+    .mid-section {
+        flex-direction: column;
+    }
+    #scroll {
+        height: 70%;
+        width: 50%;
+        min-width: 300px;
+    }
+    #menu-text-box {
+        font-size: 1rem;
+    }
+    #menu-buttons {
+        font-size: 40px;
+    }
 }
 /**Footer styling for index.html**/
 #menu-footer {
     display: flex;
     justify-content: space-between;
     background: rgb(179, 0, 0);
-    padding: 5px;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    min-height: 10%;
 }
 #menu-footer-symbol {
     display: flex;
+    width: 20%;
     margin-right: 10px;
-    gap: 10px;
-    width: 180px;
+}
+.symbol-item {
+width: 70%;
 }
 #contact-item {
 text-decoration: none;
 color: pink;
+text-align: center;
 }
