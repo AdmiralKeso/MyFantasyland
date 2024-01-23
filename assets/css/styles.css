@@ -55,6 +55,7 @@ body, html {
     font-weight: 400;
     text-align: center;
     font-size: 1.7vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 #scroll-img {
     position: absolute;
@@ -71,7 +72,8 @@ body, html {
 }
 .menu-item {
     text-decoration: none;
-    color: rgb(168, 4, 4);
+    color: rgb(255, 234, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 @media only screen and (max-width: 1000px){
     #menu-text-box {
