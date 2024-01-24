@@ -107,3 +107,20 @@ text-decoration: none;
 color: pink;
 text-align: center;
 }
+/**username.html styling**/
+#username-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    gap: 20px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.355);
+}
+label, input{
+    width: 80%;
+    height: 10%;
+}
