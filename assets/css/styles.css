@@ -1,13 +1,4 @@
-body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(/assets/images/castle-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+
 /**Header styling for index.html**/
 #menu-header {
     display: flex;
