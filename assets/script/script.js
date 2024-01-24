@@ -1,3 +1,10 @@
+
+function createCharacter(){                                        //Targets the createCharacter onlick from username.html
+const userName = document.getElementById("character-name");
+const displayName = document.getElementById("character");
+    displayName.textContent = userName.value;                      //div with id character will display username.
+}
+//Script for game.index
 //insperation from Bro Code, https://www.youtube.com/watch?v=3uKdQx-SZ5A.
 const choices = ['rock','paper','scissors','cyclops','spock']
 
