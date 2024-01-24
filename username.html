@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+<meta charset="UTF-8">
+<meta name="description" content="Username page">
+<meta name="author" content="Cas">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/script/script.js"></script>
     </head>
     <body>
-        
+<form>
+    <label id="username">Username</label>
+    <input type="text" id="character-name" required>
+    <input type="button" value="Create Caracter" onclick="createCharacter()">
+</form>
+
+<div id="character"></div>
     </body>
 </html>
