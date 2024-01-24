@@ -107,6 +107,21 @@ text-decoration: none;
 color: pink;
 text-align: center;
 }
+/**Popup window for How to play in index.html**/
+#popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    background-color: azure;
+}
+#top-section {
+    display: flex;
+    justify-content: space-between;
+}
 /**username.html styling**/
 #username-form {
     display: flex;
