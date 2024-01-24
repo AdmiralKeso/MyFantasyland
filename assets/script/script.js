@@ -1,5 +1,5 @@
-
-function createCharacter(){                                        //Targets the createCharacter onlick from username.html
+//Script for character username creation.
+function createCharacter(){                                        //Targets the createCharacter onclick from username.html
 const userName = document.getElementById("character-name");
 const displayName = document.getElementById("character");
     displayName.textContent = userName.value;                      //div with id character will display username.
