@@ -3,7 +3,9 @@ function createCharacter(){                                        //Targets the
 const userName = document.getElementById("character-name");
 const displayName = document.getElementById("character");
     displayName.textContent = userName.value;                      //div with id character will display username.
+    localStorage.setItem("character", userName.value) //https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 }
+
 //Script for game.index
 //insperation from Bro Code, https://www.youtube.com/watch?v=3uKdQx-SZ5A.
 const choices = ['rock','paper','scissors','cyclops','spock']
