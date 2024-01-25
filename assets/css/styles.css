@@ -163,6 +163,27 @@ label, input{
 height: 120px;
 width: 120px;
 border-radius: 100px;
+}
+#rock {
+    background-image: url(/assets/images/rock.jpg);
+    background-size: cover;
+}
+#paper {
+    background-image: url(/assets/images/paper.jpg);
+    background-size: cover;
+}
+#scissors {
+    background-image: url(/assets/images/scissors.png);
+    background-size: cover;
+}
+#cyclops {
+    background-image: url(/assets/images/cyclops.png);
+    background-size: cover;
+}
+#spock {
+    background-image: url(/assets/images/spock.png);
+    background-size: cover;
+}
 #score {
     width: 10%;
 }
