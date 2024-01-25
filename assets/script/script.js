@@ -18,9 +18,8 @@ const displayName = document.getElementById("character");
 
 //Script for game.index
 //insperation from Bro Code, https://www.youtube.com/watch?v=3uKdQx-SZ5A.
-const choices = ['rock','paper','scissors','cyclops','spock']
-
 function start(playerMove){
+    const choices = ['rock','paper','scissors','cyclops','spock'];
     //Math floor rounds it to the nearest number. Math random chooses a random number, < 1. * 5 so, < 5.
     const computerMove = choices[Math.floor(Math.random()* 5)];
     console.log(computerMove)
