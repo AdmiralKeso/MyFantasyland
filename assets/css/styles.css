@@ -144,3 +144,29 @@ label, input{
     width: 80%;
     height: 10%;
 }
+/**Game styling**/
+#game-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+#choices {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.choice-item {
+height: 120px;
+width: 120px;
+border-radius: 100px;
+#score {
+    width: 10%;
+}
+#menu-button {
+    width: 10%;
+    margin-top: 50px;
+}
