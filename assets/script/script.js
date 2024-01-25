@@ -52,4 +52,19 @@ function start(playerMove){
     }
     }
 }
+if(computerMove === 'rock'){
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/rock.jpg)"
+}
+else if(computerMove === 'paper'){
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/paper.jpg)"
+}
+else if(computerMove === 'scissors'){
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/scissors.png)"
+}
+else if(computerMove === 'cyclops'){
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/cyclops.png)"
+}
+else if(computerMove === 'spock'){
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/spock.png)"
+}
 }
