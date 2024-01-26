@@ -22,58 +22,75 @@ function createCharacter() {
         displayName = document.getElementById("character");
 
     displayName.textContent = userName.value;                      //div with id character will display username.
-    localStorage.setItem("character", userName.value) //https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    localStorage.setItem("character", userName.value); //https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 }
-
 //Script for game.index
 //insperation from Bro Code, https://www.youtube.com/watch?v=3uKdQx-SZ5A.
-function start(playerMove){
-    const choices = ['rock','paper','scissors','cyclops','spock'];
-    //Math floor rounds it to the nearest number. Math random chooses a random number, < 1. * 5 so, < 5.
-    const computerMove = choices[Math.floor(Math.random()* 5)];
-    console.log(computerMove)
+function start(playerMove) {
+    "use strict";
 
-    if(playerMove === computerMove){ //If the player chooses the same as the computer = Tie.
+    var choices = ["rock", "paper", "scissors", "cyclops", "spock"],
+    //Math floor rounds it to the nearest number. Math random chooses a random number, < 1. * 5 so, < 5.
+        computerMove = choices[Math.floor(Math.random() * 5)],
+        display = document.getElementById("results"),
+        result = "";
+
+    if (playerMove === computerMove) { //If the player chooses the same as the computer = Tie.
         result = "IT'S A TIE!";
+    } else {
+        switch(playerMove) { //Player move compared to computer move.
+        case "rock":
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/rock.jpg)";
+            result = (computerMove === "scissors" || computerMove === "cyclops") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks scissors, cycplops = win. If not = false (You lose)
+            break;
+        case "paper":
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/paper.jpg)";
+            result = (computerMove === "rock" || computerMove === "spock") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks rock, spock = win. If not = false (You lose)
+            break;
+        case "scissors":
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/scissors.png)";
+            result = (computerMove === "paper" || computerMove === "cyclops") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks cyclops, paper = win. If not = false (You lose)
+            break;
+        case "cyclops":
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/cyclops.png)";
+            result = (computerMove === "spock" || computerMove === "paper") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks spock, paper = win. If not = false (You lose)
+            break;
+        case "spock":
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/spock.png)";
+            result = (computerMove === "scissors" || computerMove === "rock") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks scissors, rock = win. If not = false (You lose)
+            break;
     }
-    else{
-        switch(playerMove){ //Player move compared to computer move.
-            case "rock":
-                document.getElementById("playmove").style.backgroundImage = "url(/assets/images/rock.jpg)"
-                result = (computerMove === "scissors","cyclops") ? 'YOU WIN!' : 'YOU LOSE!'; //Player picks cyclops. Computer picks scissors, cycplops = win. If not = false (You lose)
-                break;
-            case "paper":
-                document.getElementById("playmove").style.backgroundImage = "url(/assets/images/paper.jpg)"
-                result = (computerMove === "rock","spock") ? 'YOU WIN!' : 'YOU LOSE!'; //Player picks cyclops. Computer picks rock, spock = win. If not = false (You lose)
-                break;
-            case "scissors":
-                document.getElementById("playmove").style.backgroundImage = "url(/assets/images/scissors.png)"
-                result = (computerMove === "paper","cyclops") ? 'YOU WIN!' : 'YOU LOSE!'; //Player picks cyclops. Computer picks cyclops, paper = win. If not = false (You lose)
-                break;
-            case "cyclops":
-                document.getElementById("playmove").style.backgroundImage = "url(/assets/images/cyclops.png)"
-                result = (computerMove === "spock","paper") ? 'YOU WIN!' : 'YOU LOSE!'; //Player picks cyclops. Computer picks spock, paper = win. If not = false (You lose)
-                break;
-            case "spock":
-                document.getElementById("playmove").style.backgroundImage = "url(/assets/images/spock.png)"
-                result = (computerMove === "scissors","rock") ? 'YOU WIN!' : 'YOU LOSE!'; //Player picks cyclops. Computer picks scissors, rock = win. If not = false (You lose)
-                break;
-    }
-    }
+    var myScore = getScore ();
+    updateScore(result === "WINNER!" ? myScore + 1 : myScore - 1);
 }
-if(computerMove === 'rock'){
-    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/rock.jpg)"
+if(computerMove === "rock") {
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/rock.jpg)";
 }
-else if(computerMove === 'paper'){
-    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/paper.jpg)"
+else if(computerMove === "paper") {
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/paper.jpg)";
 }
-else if(computerMove === 'scissors'){
-    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/scissors.png)"
+else if(computerMove === "scissors") {
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/scissors.png)";
 }
-else if(computerMove === 'cyclops'){
-    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/cyclops.png)"
+else if(computerMove === "cyclops") {
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/cyclops.png)";
 }
-else if(computerMove === 'spock'){
-    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/spock.png)"
+else if(computerMove === "spock") {
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/spock.png)";
+}
+
+display.textContent = result;
+}
+function getScore(){
+    return parseInt(localStorage.getItem("score")) || 0;
+}
+function updateScore(score){
+    var myScore = Math.max(score, 0);
+localStorage.setItem("score",myScore);
+document.getElementById("score").textContent = "Score: " + myScore;
+
+if(myScore >=5){
+    alert("congratulations! You have won the game and beat Martha!");
+    updateScore(0);
 }
 }
