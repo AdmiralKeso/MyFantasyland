@@ -181,6 +181,11 @@ label, input{
     font-size: 5vw;
     background-size: cover;
 }
+#game-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 #game-bottom {
     display: flex;
     justify-content: space-between;
