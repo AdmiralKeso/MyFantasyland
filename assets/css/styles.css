@@ -147,10 +147,12 @@ label, input{
 /**Game styling**/
 #game-top {
     display: flex;
-    height: 35%;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    background-color: brown;
 }
 #comp {
     display: flex;
