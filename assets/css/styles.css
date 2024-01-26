@@ -154,13 +154,6 @@ label, input{
     width: 100%;
     background-color: brown;
 }
-#comp {
-    display: flex;
-    width: 250px;
-    height: 300px;
-    background-image: url(/assets/images/rock.jpg);
-    background-size: cover;
-    background-position: center;
 }
 #game-mid {
     display: flex;
