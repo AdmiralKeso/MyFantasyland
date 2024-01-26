@@ -61,8 +61,9 @@ function start(playerMove) {
             break;
     }
     var myScore = getScore ();
-    updateScore(result === "WINNER!" ? myScore + 1 : myScore - 1);
+    updateScore(result === "WINNER!" ? myScore + 1 : myScore - 1); //Result = winner. You get 1 point.
 }
+//Background change computer move.
 if(computerMove === "rock") {
     document.getElementById("compmove").style.backgroundImage = "url(/assets/images/rock.jpg)";
 }
@@ -78,19 +79,19 @@ else if(computerMove === "cyclops") {
 else if(computerMove === "spock") {
     document.getElementById("compmove").style.backgroundImage = "url(/assets/images/spock.png)";
 }
-
+//Score display
 display.textContent = result;
 }
 function getScore(){
-    return parseInt(localStorage.getItem("score")) || 0;
+    return parseInt(localStorage.getItem("score")) || 0; //Start the local storage at 0.
 }
 function updateScore(score){
-    var myScore = Math.max(score, 0);
+    var myScore = Math.max(score, 0); //Cant get a score bellow 0.
 localStorage.setItem("score",myScore);
 document.getElementById("score").textContent = "Score: " + myScore;
 
 if(myScore >=5){
-    alert("congratulations! You have won the game and beat Martha!");
+    alert("congratulations! You have won the game and beat Martha!"); //If you get 5 points. Game won.
     updateScore(0);
 }
 }
