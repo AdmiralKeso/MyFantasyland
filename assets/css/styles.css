@@ -60,7 +60,7 @@
 }
 .menu-item {
     text-decoration: none;
-    color: rgb(255, 234, 0);
+    color: #ffea00;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #htp {
@@ -95,7 +95,7 @@
 #menu-footer {
     display: flex;
     justify-content: space-between;
-    background: rgb(179, 0, 0);
+    background: #b30000;
     align-items: center;
     width: 100%;
     height: 10%;
@@ -110,7 +110,7 @@ width: 70%;
 }
 #contact-item {
 text-decoration: none;
-color: pink;
+color: #ffc0cb;
 text-align: center;
 }
 /**Popup window for How to play in index.html**/
@@ -222,23 +222,23 @@ width: 120px;
 border-radius: 100px;
 }
 #rock {
-    background-image: url(/assets/images/rock.jpg);
+    background-image: url(assets/images/rock.jpg);
     background-size: cover;
 }
 #paper {
-    background-image: url(/assets/images/paper.jpg);
+    background-image: url(assets/images/paper.jpg);
     background-size: cover;
 }
 #scissors {
-    background-image: url(/assets/images/scissors.png);
+    background-image: url(assets/images/scissors.png);
     background-size: cover;
 }
 #cyclops {
-    background-image: url(/assets/images/cyclops.png);
+    background-image: url(assets/images/cyclops.png);
     background-size: cover;
 }
 #spock {
-    background-image: url(/assets/images/spock.png);
+    background-image: url(assets/images/spock.png);
     background-size: cover;
 }
 #game-info {
