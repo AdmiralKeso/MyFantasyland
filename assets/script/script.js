@@ -15,9 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 //Script for character username creation.
-function createCharacter(){                                        //Targets the createCharacter onclick from username.html
-const userName = document.getElementById("character-name");
-const displayName = document.getElementById("character");
+function createCharacter() {
+    "use strict";
+                                           //Targets the createCharacter onclick from username.html
+    var userName = document.getElementById("character-name"),
+        displayName = document.getElementById("character");
+
     displayName.textContent = userName.value;                      //div with id character will display username.
     localStorage.setItem("character", userName.value) //https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 }
