@@ -53,7 +53,12 @@
     const userItem = localStorage.getItem("character");
     const characterName = document.getElementById("usrnm");
 
-    characterName.textContent = userItem;
-    localStorage.setItem("score", 0)
-</script>
+    <script>
+        const userItem = localStorage.getItem("character");
+        const characterName = document.getElementById("usrnm");
+    
+        characterName.textContent = userItem;
+        localStorage.setItem("score", 0)
+    </script>
+</body>
 </html>
