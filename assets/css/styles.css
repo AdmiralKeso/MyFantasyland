@@ -145,6 +145,35 @@ label, input{
     height: 10%;
 }
 /**Game styling**/
+#game-top {
+    display: flex;
+    height: 35%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+#comp {
+    display: flex;
+    width: 250px;
+    height: 300px;
+    background-image: url(/assets/images/rock.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#game-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 45%;
+    width: 100%;
+}
+.game-item {
+    width: 250px;
+    height: 250px;
+    font-size: 5vw;
+    background-size: cover;
+}
 #game-bottom {
     display: flex;
     justify-content: space-between;
