@@ -132,6 +132,9 @@ text-align: center;
     flex-direction: column;
     width: 100%;
 }
+#close {
+    cursor: pointer;
+}
 /**username.html styling**/
 #username-form {
     display: flex;
