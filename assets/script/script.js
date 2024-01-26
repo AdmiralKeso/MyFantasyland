@@ -1,13 +1,19 @@
 //Script for popup window for index.html
-var popup = document.getElementById("popup");
-var openPopup = document.getElementById("htp");
-var closePopup = document.getElementById("close");
-openPopup.onclick = function() {
-    popup.style.display = "flex";
-}
-closePopup.onclick = function() {
-    popup.style.display = "none";
-}
+/*jslint browser:true */
+document.addEventListener("DOMContentLoaded", function () {
+    "use strict";
+
+    var popup = document.getElementById("popup"),
+        openPopup = document.getElementById("htp"),
+        closePopup = document.getElementById("close");
+
+    openPopup.onclick = function () {
+        popup.style.display = "flex";
+    };
+    closePopup.onclick = function () {
+        popup.style.display = "none";
+    };
+});
 //Script for character username creation.
 function createCharacter(){                                        //Targets the createCharacter onclick from username.html
 const userName = document.getElementById("character-name");
