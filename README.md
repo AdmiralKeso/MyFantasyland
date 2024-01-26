@@ -149,13 +149,13 @@ Returning visitor goals.
  * [Pexels](https://www.pexels.com/) free stock photos, royalty free images.
  * [Pixabay](https://pixabay.com/) free stock photos, royalty free images.
  * [Pixlr](https://pixlr.com/) Resizing images.
- * [Free pik](https://freepik.com/) https://www.freepik.com/free-vector/set-different-stones-shapes-isolated-white-background_17677268.htm#query=cartoon%20rock&position=39&from_view=search&track=ais&uuid=8b4cf126-0dc4-4db4-8412-03fa3bfa180e
- * [Free pik](https://freepik.com/)
+ * [Rock](https://freepik.com/) https://www.freepik.com/free-vector/set-different-stones-shapes-isolated-white-background_17677268.htm#query=cartoon%20rock&position=39&from_view=search&track=ais&uuid=8b4cf126-0dc4-4db4-8412-03fa3bfa180e
+ * [Scissor](https://freepik.com/) https://www.freepik.com/icon/scissors_10160684
    
 ---
 
 ## Acknowledgements
- * Inspiration for the Bro code. https://www.youtube.com/watch?v=3uKdQx-SZ5A.
+ * Inspiration from the Bro code. https://www.youtube.com/watch?v=3uKdQx-SZ5A.
  * My mentor Mitko Bachvarov provided usefull information about local storage.
  * slack community.
 
