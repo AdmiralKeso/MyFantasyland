@@ -66,6 +66,7 @@
 #htp {
     width: 50%;
     height: 50px;
+    min-width: 70px;
     font-size: 50%;
 }
 @media only screen and (max-width: 1000px){
