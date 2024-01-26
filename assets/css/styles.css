@@ -116,16 +116,21 @@ text-align: center;
 #popup {
     display: none;
     position: fixed;
+    align-items: center;
+    text-align: center;
     z-index: 1;
-    left: 0;
-    top: 0;
+    left: 10%;
+    top: 5%;
     width: 80%;
     height: 80%;
-    background-color: azure;
+    background-color: rgb(250, 200, 115);
+    border: 10px solid black;
 }
 #top-section {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
 }
 /**username.html styling**/
 #username-form {
