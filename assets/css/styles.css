@@ -178,12 +178,13 @@ label, input{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    height: 20%;
 }
 #choices {
     display: flex;
     justify-content: space-between;
     width: 70%;
+    height: auto;
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
