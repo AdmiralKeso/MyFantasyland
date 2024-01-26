@@ -183,11 +183,9 @@ label, input{
 #choices {
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    height: auto;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-items: center;
+    width: 100%;
+    height: 30%;
 }
 .choice-item {
 height: 120px;
