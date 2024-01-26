@@ -40,23 +40,23 @@ function start(playerMove) {
     } else {
         switch(playerMove) { //Player move compared to computer move.
         case "rock":
-            document.getElementById("playmove").style.backgroundImage = "url(assets/images/rock.jpg)";
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/rock.jpg)";
             result = (computerMove === "scissors" || computerMove === "cyclops") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks scissors, cycplops = win. If not = false (You lose)
             break;
         case "paper":
-            document.getElementById("playmove").style.backgroundImage = "url(assets/images/paper.jpg)";
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/paper.jpg)";
             result = (computerMove === "rock" || computerMove === "spock") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks rock, spock = win. If not = false (You lose)
             break;
         case "scissors":
-            document.getElementById("playmove").style.backgroundImage = "url(assets/images/scissors.png)";
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/scissors.png)";
             result = (computerMove === "paper" || computerMove === "cyclops") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks cyclops, paper = win. If not = false (You lose)
             break;
         case "cyclops":
-            document.getElementById("playmove").style.backgroundImage = "url(assets/images/cyclops.png)";
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/cyclops.png)";
             result = (computerMove === "spock" || computerMove === "paper") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks spock, paper = win. If not = false (You lose)
             break;
         case "spock":
-            document.getElementById("playmove").style.backgroundImage = "url(assets/images/spock.png)";
+            document.getElementById("playmove").style.backgroundImage = "url(/assets/images/spock.png)";
             result = (computerMove === "scissors" || computerMove === "rock") ? "WINNER!" : "YOU LOSE!"; //Player picks cyclops. Computer picks scissors, rock = win. If not = false (You lose)
             break;
     }
@@ -65,19 +65,19 @@ function start(playerMove) {
 }
 //Background change computer move.
 if(computerMove === "rock") {
-    document.getElementById("compmove").style.backgroundImage = "url(assets/images/rock.jpg)";
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/rock.jpg)";
 }
 else if(computerMove === "paper") {
-    document.getElementById("compmove").style.backgroundImage = "url(assets/images/paper.jpg)";
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/paper.jpg)";
 }
 else if(computerMove === "scissors") {
-    document.getElementById("compmove").style.backgroundImage = "url(assets/images/scissors.png)";
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/scissors.png)";
 }
 else if(computerMove === "cyclops") {
-    document.getElementById("compmove").style.backgroundImage = "url(assets/images/cyclops.png)";
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/cyclops.png)";
 }
 else if(computerMove === "spock") {
-    document.getElementById("compmove").style.backgroundImage = "url(assets/images/spock.png)";
+    document.getElementById("compmove").style.backgroundImage = "url(/assets/images/spock.png)";
 }
 //Score display
 display.textContent = result;
