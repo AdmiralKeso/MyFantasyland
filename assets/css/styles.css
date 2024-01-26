@@ -154,6 +154,18 @@ label, input{
     width: 100%;
     background-color: brown;
 }
+#score {
+    font-size: 2vw;
+    width: 25%;
+}
+#usrnm {
+    font-size: 40px;
+}
+#menu-button {
+    width: 25%;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
 }
 #game-mid {
     display: flex;
